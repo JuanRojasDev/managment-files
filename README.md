@@ -88,15 +88,5 @@ php artisan serve --host=127.0.0.1 --port=8000
 <img width="1903" height="870" alt="image" src="https://github.com/user-attachments/assets/b9f9f68c-04e8-4c04-9796-5b69298d1451" />
 ---
 
-## Notas técnicas y recomendaciones
-
-- En producción, añadir escaneo antivirus y subir a un almacenamiento controlado (S3 con políticas).
-- Considerar límites por IP y rate limiting para proteger endpoints de subida.
-- Todos los checks de seguridad se hacen en servidor; la UI es sólo una capa para mejorar UX.
-
----
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+# Autor
+ - @JuanRojasDev
