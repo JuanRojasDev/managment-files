@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Storage Secure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}</style>
+  <style>
+    body{font-family:'Inter',sans-serif;background-color:#f9fafb;color:#111827;}
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
+    <aside class="w-72 bg-white/10 backdrop-blur-lg border-r border-white/20 hidden lg:block">
+  <div class="p-6">
+    <h1 class="text-2xl font-bold tracking-tight">StorageSecure</h1>
+    <p class="text-sm text-indigo-100">Control seguro de archivos</p>
+  </div>
+  <nav class="px-4 mt-6">
+    <ul class="space-y-2">
+      <li><a href="/dashboard" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">🏠 Dashboard</a></li>
+      <li><a href="/files" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">📁 Archivos</a></li>
+      <li><a href="/admin" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">⚙️ Administración</a></li>
+    </ul>
+  </nav>
+</aside>
+    <main class="flex-1 overflow-y-auto">
+      <header class="bg-white/10 backdrop-blur-lg border-b border-white/20 px-6 py-4 flex items-center justify-between">
+        <h2 class="text-lg font-semibold text-white/90"></h2>
+        <div class="flex items-center gap-3">
+          <span class="text-sm text-indigo-100"></span>
+          <img src="https://ui-avatars.com/api/?name=User&background=6366F1&color=fff&rounded=true" class="w-9 h-9 rounded-full" alt="avatar">
+        </div>
+      </header>
+      <div class="p-8">
+        
+                          <div wire:snapshot="{&quot;data&quot;:[],&quot;memo&quot;:{&quot;id&quot;:&quot;oTtaGZzECqd6Rn0fkGsT&quot;,&quot;name&quot;:&quot;pages.auth.register&quot;,&quot;path&quot;:&quot;register&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;624c15d00bc002077541948123842b85556e38fe5da641e2f7e58a8adff4029a&quot;}" wire:effects="[]" wire:id="oTtaGZzECqd6Rn0fkGsT" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 via-indigo-400 to-indigo-200">
+    <div class="bg-white/20 p-8 rounded-3xl shadow-2xl backdrop-blur-lg border border-white/30 max-w-lg w-full text-center">
+        <h1 class="text-3xl font-bold text-indigo-900 mb-4">Crear cuenta</h1>
+
+        <form method="POST" action="http://127.0.0.1:8000/register" class="space-y-4 text-left">
+            <input type="hidden" name="_token" value="Ni5eKmohjfMn7fWI9W3nKB100XL6g9KZqHHS9RoD" autocomplete="off">            <div>
+                <label for="name" class="block text-sm font-medium text-indigo-700">Nombre completo</label>
+                <input type="text" name="name" id="name" class="mt-1 block w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" required autofocus>
+            </div>
+            <div>
+                <label for="email" class="block text-sm font-medium text-indigo-700">Correo electrónico</label>
+                <input type="email" name="email" id="email" class="mt-1 block w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" required>
+            </div>
+            <div>
+                <label for="password" class="block text-sm font-medium text-indigo-700">Contraseña</label>
+                <input type="password" name="password" id="password" class="mt-1 block w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" required>
+            </div>
+            <div>
+                <label for="password_confirmation" class="block text-sm font-medium text-indigo-700">Confirmar contraseña</label>
+                <input type="password" name="password_confirmation" id="password_confirmation" class="mt-1 block w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" required>
+            </div>
+            <button type="submit" class="w-full py-2 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:opacity-95 transition-shadow shadow-md">Registrarse</button>
+            <p class="text-center text-sm text-indigo-700">¿Ya tienes cuenta? <a href="http://127.0.0.1:8000/login" class="font-medium text-violet-600 hover:underline">Inicia sesión</a></p>
+        </form>
+    </div>
+</div>
+              </div>
+    </main>
+  </div>
+  <!-- Livewire Scripts -->
+<script src="/livewire/livewire.js?id=df3a17f2"   data-csrf="Ni5eKmohjfMn7fWI9W3nKB100XL6g9KZqHHS9RoD" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
+</html>

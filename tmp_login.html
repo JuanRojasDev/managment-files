@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Storage Secure</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Livewire Styles --><style >[wire\:loading][wire\:loading], [wire\:loading\.delay][wire\:loading\.delay], [wire\:loading\.inline-block][wire\:loading\.inline-block], [wire\:loading\.inline][wire\:loading\.inline], [wire\:loading\.block][wire\:loading\.block], [wire\:loading\.flex][wire\:loading\.flex], [wire\:loading\.table][wire\:loading\.table], [wire\:loading\.grid][wire\:loading\.grid], [wire\:loading\.inline-flex][wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.none][wire\:loading\.delay\.none], [wire\:loading\.delay\.shortest][wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter][wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short][wire\:loading\.delay\.short], [wire\:loading\.delay\.default][wire\:loading\.delay\.default], [wire\:loading\.delay\.long][wire\:loading\.delay\.long], [wire\:loading\.delay\.longer][wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest][wire\:loading\.delay\.longest] {display: none;}[wire\:offline][wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}:root {--livewire-progress-bar-color: #2299dd;}[x-cloak] {display: none !important;}[wire\:cloak] {display: none !important;}</style>
+  <style>
+    body{font-family:'Inter',sans-serif;background-color:#f9fafb;color:#111827;}
+  </style>
+</head>
+<body>
+  <div class="min-h-screen flex bg-gradient-to-br from-indigo-500 to-violet-600 text-white">
+    <aside class="w-72 bg-white/10 backdrop-blur-lg border-r border-white/20 hidden lg:block">
+  <div class="p-6">
+    <h1 class="text-2xl font-bold tracking-tight">StorageSecure</h1>
+    <p class="text-sm text-indigo-100">Control seguro de archivos</p>
+  </div>
+  <nav class="px-4 mt-6">
+    <ul class="space-y-2">
+      <li><a href="/dashboard" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">🏠 Dashboard</a></li>
+      <li><a href="/files" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">📁 Archivos</a></li>
+      <li><a href="/admin" class="flex items-center gap-3 p-3 rounded-xl hover:bg-white/10 transition">⚙️ Administración</a></li>
+    </ul>
+  </nav>
+</aside>
+    <main class="flex-1 overflow-y-auto">
+      <header class="bg-white/10 backdrop-blur-lg border-b border-white/20 px-6 py-4 flex items-center justify-between">
+        <h2 class="text-lg font-semibold text-white/90"></h2>
+        <div class="flex items-center gap-3">
+          <span class="text-sm text-indigo-100"></span>
+          <img src="https://ui-avatars.com/api/?name=User&background=6366F1&color=fff&rounded=true" class="w-9 h-9 rounded-full" alt="avatar">
+        </div>
+      </header>
+      <div class="p-8">
+        
+                          <div wire:snapshot="{&quot;data&quot;:{&quot;form&quot;:[{&quot;email&quot;:&quot;&quot;,&quot;password&quot;:&quot;&quot;,&quot;remember&quot;:false},{&quot;class&quot;:&quot;App\\Livewire\\Forms\\LoginForm&quot;,&quot;s&quot;:&quot;form&quot;}]},&quot;memo&quot;:{&quot;id&quot;:&quot;i03Nnlu2ewiJXrh9bAFH&quot;,&quot;name&quot;:&quot;pages.auth.login&quot;,&quot;path&quot;:&quot;login&quot;,&quot;method&quot;:&quot;GET&quot;,&quot;children&quot;:[],&quot;scripts&quot;:[],&quot;assets&quot;:[],&quot;errors&quot;:[],&quot;locale&quot;:&quot;en&quot;},&quot;checksum&quot;:&quot;f204af19f9d64d2a45b25815a48460a1d060748c91946ddea1c88793cf697f02&quot;}" wire:effects="[]" wire:id="i03Nnlu2ewiJXrh9bAFH" class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-indigo-600 via-indigo-400 to-indigo-200">
+    <div class="bg-white/20 p-8 rounded-3xl shadow-2xl backdrop-blur-lg border border-white/30 max-w-lg w-full text-center">
+        <!-- Session Status -->
+        <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+
+        <h2 class="text-3xl font-bold text-indigo-900 mb-4">Iniciar sesión</h2>
+
+        <form wire:submit="login" class="space-y-4 text-left">
+            <!-- Email Address -->
+            <div>
+                <label class="block font-medium text-sm text-gray-700 text-indigo-700" for="email">
+    Correo electrónico
+</label>
+                <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" wire:model="form.email" id="email" type="email" name="email" required="required" autofocus="autofocus" autocomplete="username">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label class="block font-medium text-sm text-gray-700 text-indigo-700" for="password">
+    Contraseña
+</label>
+                <input  class="border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm block mt-1 w-full rounded-xl border-indigo-200 shadow-sm focus:ring-2 focus:ring-indigo-400" wire:model="form.password" id="password" type="password" name="password" required="required" autocomplete="current-password">
+                <!--[if BLOCK]><![endif]--><!--[if ENDBLOCK]><![endif]-->
+            </div>
+
+            <!-- Remember Me -->
+            <div class="flex items-center">
+                <label for="remember" class="inline-flex items-center">
+                    <input wire:model="form.remember" id="remember" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
+                    <span class="ms-2 text-sm text-indigo-700">Recuérdame</span>
+                </label>
+                <div class="ml-auto text-sm">
+                    <!--[if BLOCK]><![endif]-->                        <a class="text-indigo-600 hover:underline" href="http://127.0.0.1:8000/forgot-password" wire:navigate>¿Olvidaste tu contraseña?</a>
+                    <!--[if ENDBLOCK]><![endif]-->
+                </div>
+            </div>
+
+            <div>
+                <button type="submit" class="w-full py-2 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-600 to-violet-600 hover:opacity-95 transition-shadow shadow-md">Iniciar sesión</button>
+            </div>
+
+            <p class="text-center text-sm text-indigo-700">¿No tienes cuenta? <a href="http://127.0.0.1:8000/register" class="font-medium text-violet-600 hover:underline">Regístrate</a></p>
+        </form>
+    </div>
+</div>
+              </div>
+    </main>
+  </div>
+  <!-- Livewire Scripts -->
+<script src="/livewire/livewire.js?id=df3a17f2"   data-csrf="tpdaTUNXlY0bJGqAwMVRH0jPgJhv4u6w2AR8lcIV" data-update-uri="/livewire/update" data-navigate-once="true"></script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</body>
+</html>
