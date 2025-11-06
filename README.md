@@ -1,4 +1,4 @@
-# Prueba técnica — Controlador de almacenamiento seguro
+<img width="1905" height="884" alt="image" src="https://github.com/user-attachments/assets/befb49ed-ba55-47d2-a1c5-7cc2f819d8de" /><img width="1892" height="914" alt="image" src="https://github.com/user-attachments/assets/6ede3822-e679-42bc-9726-c82171556e42" /># Prueba técnica — Controlador de almacenamiento seguro
 
 Este repositorio contiene una implementación de ejemplo para la prueba técnica: una mini-aplicación de gestión de archivos con reglas de seguridad (cuotas, extensiones prohibidas, análisis de ZIP) implementada sobre Laravel + Livewire + TailwindCSS.
 
@@ -79,41 +79,13 @@ php artisan serve --host=127.0.0.1 --port=8000
    - Escaneo de `.zip`: si el archivo subido es `.zip`, se itera su contenido con `ZipArchive` y se rechaza si cualquier archivo interno tiene una extensión prohibida.
    - Todas las validaciones de seguridad se ejecutan en PHP; el frontend usa `fetch`/Livewire para subir sin recargar.
 
----
+## Capturas de la Aplicacion
 
-## Pruebas rápidas para el evaluator
-
-- Subir un archivo grande para exceder cuota: ver error tipo "Error: Cuota de almacenamiento (10 MB) excedida".
-- Subir un `.exe` o `.php`: ver mensaje "Error: El tipo de archivo '.exe' no está permitido".
-- Subir un `.zip` con `script_malicioso.js`: el zip debe ser rechazado indicando el nombre del fichero interno conflictivo.
-
----
-
-## Cómo subir el repo a GitHub (comandos)
-
-1. Crea un repo vacío en GitHub.
-2. Ejecuta en PowerShell dentro del proyecto:
-
-```powershell
-git init
-git add .
-git commit -m "Prueba técnica: controlador de almacenamiento seguro"
-git branch -M main
-git remote add origin <URL_DEL_REPO>
-git push -u origin main
-```
-
-Si quieres que yo haga el push, puedo prepararlo si me proporcionas la URL remota y un token (por seguridad normalmente lo sube el autor).
-
----
-
-## Video explicativo
-
-Graba hasta 5 minutos mostrando:
-1. Instalación rápida (composer install, migrate, serve).
-2. Credenciales y acceso al admin.
-3. Pruebas clave (cuota, extensiones prohibidas, zip).
-4. Breve explicación de la arquitectura y decisiones (por ejemplo: por qué Laravel, por qué validarlo en backend, uso de ZipArchive, prioridades de cuota).
+<img width="1901" height="900" alt="image" src="https://github.com/user-attachments/assets/b9c47364-04ad-47d9-8304-d9c5b7560b7e" />
+<img width="1892" height="914" alt="image" src="https://github.com/user-attachments/assets/523e986d-f457-4788-9a8b-7262cb72a8bc" />
+<img width="1899" height="911" alt="image" src="https://github.com/user-attachments/assets/754a1e4c-d64d-49d2-a0ef-720a091b02e4" />
+<img width="1905" height="884" alt="image" src="https://github.com/user-attachments/assets/54bfcff5-f1cc-49fc-a4bc-0e3a21dd1c87" />
+<img width="1903" height="870" alt="image" src="https://github.com/user-attachments/assets/b9f9f68c-04e8-4c04-9796-5b69298d1451" />
 
 ---
 
@@ -124,71 +96,6 @@ Graba hasta 5 minutos mostrando:
 - Todos los checks de seguridad se hacen en servidor; la UI es sólo una capa para mejorar UX.
 
 ---
-
-Si quieres que haga el `git push` por ti, pásame la URL del repositorio remoto o indícame que quieres el script listo para ejecutar y lo preparo.
-
-Saludos.
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
-
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
-
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
 If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
 ## License
