@@ -1,4 +1,4 @@
-<img width="1905" height="884" alt="image" src="https://github.com/user-attachments/assets/befb49ed-ba55-47d2-a1c5-7cc2f819d8de" /><img width="1892" height="914" alt="image" src="https://github.com/user-attachments/assets/6ede3822-e679-42bc-9726-c82171556e42" /># Prueba técnica — Controlador de almacenamiento seguro
+# Prueba técnica — Controlador de almacenamiento seguro
 
 Este repositorio contiene una implementación de ejemplo para la prueba técnica: una mini-aplicación de gestión de archivos con reglas de seguridad (cuotas, extensiones prohibidas, análisis de ZIP) implementada sobre Laravel + Livewire + TailwindCSS.
 
@@ -86,7 +86,6 @@ php artisan serve --host=127.0.0.1 --port=8000
 <img width="1899" height="911" alt="image" src="https://github.com/user-attachments/assets/754a1e4c-d64d-49d2-a0ef-720a091b02e4" />
 <img width="1905" height="884" alt="image" src="https://github.com/user-attachments/assets/54bfcff5-f1cc-49fc-a4bc-0e3a21dd1c87" />
 <img width="1903" height="870" alt="image" src="https://github.com/user-attachments/assets/b9f9f68c-04e8-4c04-9796-5b69298d1451" />
-
 ---
 
 ## Notas técnicas y recomendaciones
